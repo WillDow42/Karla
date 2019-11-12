@@ -1,4 +1,4 @@
-# Karla
+# Karla BATchAssistant
 A BATch assistant for basic chat and tasks
 README/Setup For BATch Assistant Karla,
 
