@@ -23,7 +23,7 @@ echo BOOT SUCCESS
 goto :StartVersion
 
 :StartVersion
-set /p Name="Version 1.4 First Distribution. WELCOME TO KARLA! [Press Enter]"
+set /p Name="Version 1.5 First Distribution. WELCOME TO KARLA! [Press Enter]"
 
 
 :choice
@@ -71,10 +71,16 @@ if /I "%c%" EQU "Z" goto :Request
 goto :BurgerN
 
 :Joke1
-set /P c=Insert generic Joke1 here[X]
-if /I "%c%" EQU "X" goto :JokeEnd
+set /P c=Whats the best thing about Switzerland?[X]
+if /I "%c%" EQU "X" goto :Joke1End
 if /I "%c%" EQU "Z" goto :Request
 goto :Joke1
+
+:Joke1End
+set /P c=I dont know but the flag is a big plus![X]
+if /I "%c%" EQU "X" goto :JokeEnd
+if /I "%c%" EQU "Z" goto :Request
+goto :Joke1End
 
 :JokeEnd
 set /P c=Did you enjoy my cleverly crafted joke?[Y/N]
@@ -500,33 +506,33 @@ mode con cols=160 lines=62
 cls
 echo.
 echo.
-echo ษอออออออออออออออออออออออออออออป
-echo บ What would you like to do?  บ
-echo.ฬอออออออออออออออออออออออออออออน		
-echo บ 1) Wander Gielinor          บ
-echo.บ                             บ
-echo บ 2) Weapon Shop              บ
-echo.บ                             บ
-echo บ 3) Armor Shop               บ
-echo.บ                             บ
-echo บ 4) Legend's Store           บ
-echo.บ                             บ
-echo บ 5) Trading Post             บ
-echo.บ                             บ
-echo บ 6) Max's Shop               บ
-echo.บ                             บ
-echo บ 7) Smuggler                 บ
-echo.บ                             บ
-echo บ 8) The Stronghold           บ
-echo.บ                             บ
-echo บ 9) Skill Plot               บ
-echo.บ                             บ
-echo บ 10) RealmBank               บ
-echo.บ                             บ
-echo บ 11) Quest Hall              บ
-echo.บ                             บ
-echo บ 97) Your Inventory          บ
-echo ศอออออออออออออออออออออออออออออผ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo ยบ What would you like to do?  ยบ
+echo.รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน		
+echo ยบ 1) Wander Gielinor          ยบ
+echo.ยบ                             ยบ
+echo ยบ 2) Weapon Shop              ยบ
+echo.ยบ                             ยบ
+echo ยบ 3) Armor Shop               ยบ
+echo.ยบ                             ยบ
+echo ยบ 4) Legend's Store           ยบ
+echo.ยบ                             ยบ
+echo ยบ 5) Trading Post             ยบ
+echo.ยบ                             ยบ
+echo ยบ 6) Max's Shop               ยบ
+echo.ยบ                             ยบ
+echo ยบ 7) Smuggler                 ยบ
+echo.ยบ                             ยบ
+echo ยบ 8) The Stronghold           ยบ
+echo.ยบ                             ยบ
+echo ยบ 9) Skill Plot               ยบ
+echo.ยบ                             ยบ
+echo ยบ 10) RealmBank               ยบ
+echo.ยบ                             ยบ
+echo ยบ 11) Quest Hall              ยบ
+echo.ยบ                             ยบ
+echo ยบ 97) Your Inventory          ยบ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 echo.
 echo.
@@ -552,12 +558,12 @@ echo.
 echo.
 echo.
 echo.
-echo ษอออออออออออออออออออออออออออออออออออออออป
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
 echo   Currently logged in as %username1%.
-echo.ฬอออออออออออออออออออออออออออออออออออออออน
-echo บ 98) Settings                     	บ
-echo บ 99) Log out                      	บ
-echo ศอออออออออออออออออออออออออออออออออออออออผ
+echo.รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo ยบ 98) Settings                     	ยบ
+echo ยบ 99) Log out                      	ยบ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 set /p x1=
 if %x1% EQU 1 goto picknpc
@@ -614,9 +620,9 @@ cls
 echo.
 echo Welcome to RealmBank^^! Here are your accounts which you can store up to 1,000,000,000 (1B) gold into each.
 echo.
-echo อออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo  You have %money% gold.			
-echo.อออออออออออออออออออออออออออออออ
+echo.รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo       Account 1: %acc1m%			
 echo          - Gold: %acc1g%				
 echo.					
@@ -631,7 +637,7 @@ echo          - Gold: %acc4g%
 echo.					
 echo       Account 5: %acc5m%			
 echo          - Gold: %acc5g%				
-echo อออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo.
 echo Type "exit" to exit.
 echo.
@@ -899,9 +905,9 @@ echo.
 ping localhost -n 2 >nul
 cls
 echo.
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo **** Your Health: %hp% ***** %npctype%'s Health: %health% ****
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo.
 echo.
 echo You encounter %npctype%, a level %level% War Commander.
@@ -929,9 +935,9 @@ if %swordtype% EQU Alydril set /a damage=%random%*600/32767+1
 if %damage% GTR %health% set /a damage=%health%
 cls
 echo.
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo **** Your Health: %hp% ***** %npctype%'s Health: %health% ****
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo.
 echo.
 echo You attack.
@@ -990,9 +996,9 @@ mode con cols=160 lines=62
 title FinalRealm - Stronghold
 cls
 echo.
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo **** Your Health: %hp% ***** %npctype%'s Health: %health% ****
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo.
 echo.
 echo %npctype% attacks.
@@ -1378,9 +1384,9 @@ goto fs1
 :fs1
 cls
 echo.
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo **** Your Health: %hp% ***** %npctype%'s Health: %health% ****
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo.
 echo.
 echo What would you like to do?
@@ -1414,9 +1420,9 @@ if %swordtype% EQU Alydril set /a damage=%random%*600/32767+1
 if %damage% GTR %health% set /a damage=%health%
 cls
 echo.
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo **** Your Health: %hp% ***** %npctype%'s Health: %health% ****
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo.
 echo.
 echo You attack^^!
@@ -1487,9 +1493,9 @@ mode con cols=160 lines=62
 title FinalRealm - Fighting
 cls
 echo.
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo **** Your Health: %hp% ***** %npctype%'s Health: %health% ****
-echo ออออออออออออออออออออออออออออออออออออออออออออออออออออออออ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรร
 echo.
 echo.
 echo The %npctype% attacks.
@@ -1656,42 +1662,42 @@ if %money% GTR 5000000 set /a money=5000000
 if %playerxp% GTR 1000000 set /a playerxp=1000000
 echo FinalRealm - Inventory
 echo.
-echo ษออออออออออออออออออออออออออออออออออออออออออออออออป
-echo บ Health: %hp%					 บ
-echo บ Level: %curlvl%					 บ
-echo บ Gold: %money%					 บ
-echo บ EXP: %playerxp%					 บ
-echo บ EXP until next level: %xpuntil%			 บ
-echo บ Total level: %ttllvl%				 บ
-echo บ Weapon: %swordtype% %skind%		 	 บ
-echo บ Armor: %armtype% Armor			 	 บ
-echo ฬออออออออออออออออออออออหอออออออออออออออออออออออออน
-echo บ Items:	       บ
-echo บ Bait: %bait%	       บ Gemstones: %gem%
-echo บ Seeds: %seed%	       บ Magic Orbs: %morb%
-echo บ Furs: %fur%	       บ Raw Food: %rfood%
-echo บ Ore: %ore%	       บ Huge Bones: %hbone%
-echo บ Logs: %log%	       บ Dragon Hides: %dhide%
-echo บ Food: %food%	       บ Runic Tablets: %rtab%
-echo บ Ingots: %ingot%	       บ Goblin Mails: %gmail%
-echo บ Potions: %potion%	       บ Bows: %bow%
-echo ฬออออออออออออออออออออออฮอออออออออออออออออออออออออน
-echo บ Weapons:             บ Armor:
-echo บ Wooden Sword: %sword1%      บ Cloth Armor: %arm1%
-echo บ Stone Sword: %sword2%       บ Chain Armor: %arm2%
-echo บ Bronze Sword: %sword3%      บ Bronze Armor: %arm3%
-echo บ Iron Sword: %sword4%        บ Iron Armor: %arm4%
-echo บ Steel Sword: %sword5%       บ Steel Armor: %arm5%
-echo บ Gold Sword: %sword6%        บ Gold Armor: %arm6%
-echo บ Crystal Sword: %sword7%     บ Crystal Armor: %arm7%
-echo บ Sacred Blade: %sword8%      บ Sacred Armor: %arm8%
-echo บ Runic Sword: %sword9%       บ Runic Armor: %arm9%
-echo บ Infernal Rapier: %sword10%   บ Infernal Armor: %arm10%
-echo บ Omega Maul: %sword11%        บ Omega Armor: %arm11%
-echo บ Chaotic Spear: %sword12%     บ Chaotic Armor: %arm12%
-echo บ Mythical Godsword: %ls1% บ Mythical Armor: %la1%
-echo บ Alydril Godsword: %ls2%  บ Alydril Armor: %la2%
-echo ศออออออออออออออออออออออสอออออออออออออออออออออออออผ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo ยบ Health: %hp%					 ยบ
+echo ยบ Level: %curlvl%					 ยบ
+echo ยบ Gold: %money%					 ยบ
+echo ยบ EXP: %playerxp%					 ยบ
+echo ยบ EXP until next level: %xpuntil%			 ยบ
+echo ยบ Total level: %ttllvl%				 ยบ
+echo ยบ Weapon: %swordtype% %skind%		 	 ยบ
+echo ยบ Armor: %armtype% Armor			 	 ยบ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo ยบ Items:	       ยบ
+echo ยบ Bait: %bait%	       ยบ Gemstones: %gem%
+echo ยบ Seeds: %seed%	       ยบ Magic Orbs: %morb%
+echo ยบ Furs: %fur%	       ยบ Raw Food: %rfood%
+echo ยบ Ore: %ore%	       ยบ Huge Bones: %hbone%
+echo ยบ Logs: %log%	       ยบ Dragon Hides: %dhide%
+echo ยบ Food: %food%	       ยบ Runic Tablets: %rtab%
+echo ยบ Ingots: %ingot%	       ยบ Goblin Mails: %gmail%
+echo ยบ Potions: %potion%	       ยบ Bows: %bow%
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo ยบ Weapons:             ยบ Armor:
+echo ยบ Wooden Sword: %sword1%      ยบ Cloth Armor: %arm1%
+echo ยบ Stone Sword: %sword2%       ยบ Chain Armor: %arm2%
+echo ยบ Bronze Sword: %sword3%      ยบ Bronze Armor: %arm3%
+echo ยบ Iron Sword: %sword4%        ยบ Iron Armor: %arm4%
+echo ยบ Steel Sword: %sword5%       ยบ Steel Armor: %arm5%
+echo ยบ Gold Sword: %sword6%        ยบ Gold Armor: %arm6%
+echo ยบ Crystal Sword: %sword7%     ยบ Crystal Armor: %arm7%
+echo ยบ Sacred Blade: %sword8%      ยบ Sacred Armor: %arm8%
+echo ยบ Runic Sword: %sword9%       ยบ Runic Armor: %arm9%
+echo ยบ Infernal Rapier: %sword10%   ยบ Infernal Armor: %arm10%
+echo ยบ Omega Maul: %sword11%        ยบ Omega Armor: %arm11%
+echo ยบ Chaotic Spear: %sword12%     ยบ Chaotic Armor: %arm12%
+echo ยบ Mythical Godsword: %ls1% ยบ Mythical Armor: %la1%
+echo ยบ Alydril Godsword: %ls2%  ยบ Alydril Armor: %la2%
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 echo What would you like to do?
 echo.
@@ -2440,24 +2446,24 @@ mode con cols=160 lines=62
 cls
 echo FinalRealm Legend's Store
 echo.
-echo ษอออออออออออออออออออออออออออออออออป
-echo บ You currently have %money% gold. บ
-echo ศอออออออออออออออออออออออออออออออออผ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo ยบ You currently have %money% gold. ยบ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 echo.
-echo ษออออออออออออออออออออออออออออออออออออออออออออออป
-echo บ 1) Mythical Godsword:  Costs 50 Magic Orbs.  บ
-echo.บ		    	 Owned: %ls1%              บ
-echo.บ                                              บ
-echo บ 2) Alydril Godsword:   Costs 100 Magic Orbs. บ
-echo.บ		    	 Owned: %ls2%              บ
-echo.บ                                              บ
-echo บ 3) Mythical Armor:	 Costs 65 Magic Orbs.  บ
-echo.บ		         Owned: %la1%              บ
-echo.บ                                              บ
-echo บ 4) Alydril Armor:   	 Costs 120 Magic Orbs. บ
-echo.บ		   	 Owned: %la2%              บ
-echo ศออออออออออออออออออออออออออออออออออออออออออออออผ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo ยบ 1) Mythical Godsword:  Costs 50 Magic Orbs.  ยบ
+echo.ยบ		    	 Owned: %ls1%              ยบ
+echo.ยบ                                              ยบ
+echo ยบ 2) Alydril Godsword:   Costs 100 Magic Orbs. ยบ
+echo.ยบ		    	 Owned: %ls2%              ยบ
+echo.ยบ                                              ยบ
+echo ยบ 3) Mythical Armor:	 Costs 65 Magic Orbs.  ยบ
+echo.ยบ		         Owned: %la1%              ยบ
+echo.ยบ                                              ยบ
+echo ยบ 4) Alydril Armor:   	 Costs 120 Magic Orbs. ยบ
+echo.ยบ		   	 Owned: %la2%              ยบ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 echo.
 echo Type "exit" to the exit the store.
@@ -2721,42 +2727,42 @@ set destination2=checkitems
 cls
 echo FinalRealm - Inventory
 echo.
-echo ษออออออออออออออออออออออออออออออออออออออออออออออออป
-echo บ Health: %hp%					 บ
-echo บ Level: %curlvl%					 บ
-echo บ Gold: %money%					 บ
-echo บ EXP: %playerxp%					 บ
-echo บ EXP until next level: %xpuntil%			 บ
-echo บ Total level: %ttllvl%				 บ
-echo บ Weapon: %swordtype% %skind%		 	 บ
-echo บ Armor: %armtype% Armor			 	 บ
-echo ฬออออออออออออออออออออออหอออออออออออออออออออออออออน
-echo บ Items:	       บ
-echo บ Bait: %bait%	       บ Gemstones: %gem%
-echo บ Seeds: %seed%	       บ Magic Orbs: %morb%
-echo บ Furs: %fur%	       บ Raw Food: %rfood%
-echo บ Ore: %ore%	       บ Huge Bones: %hbone%
-echo บ Logs: %log%	       บ Dragon Hides: %dhide%
-echo บ Food: %food%	       บ Runic Tablets: %rtab%
-echo บ Ingots: %ingot%	       บ Goblin Mails: %gmail%
-echo บ Potions: %potion%	       บ Bows: %bow%
-echo ฬออออออออออออออออออออออฮอออออออออออออออออออออออออน
-echo บ Weapons:             บ Armor:
-echo บ Wooden Sword: %sword1%      บ Cloth Armor: %arm1%
-echo บ Stone Sword: %sword2%       บ Chain Armor: %arm2%
-echo บ Bronze Sword: %sword3%      บ Bronze Armor: %arm3%
-echo บ Iron Sword: %sword4%        บ Iron Armor: %arm4%
-echo บ Steel Sword: %sword5%       บ Steel Armor: %arm5%
-echo บ Gold Sword: %sword6%        บ Gold Armor: %arm6%
-echo บ Crystal Sword: %sword7%     บ Crystal Armor: %arm7%
-echo บ Sacred Blade: %sword8%      บ Sacred Armor: %arm8%
-echo บ Runic Sword: %sword9%       บ Runic Armor: %arm9%
-echo บ Infernal Rapier: %sword10%   บ Infernal Armor: %arm10%
-echo บ Omega Maul: %sword11%        บ Omega Armor: %arm11%
-echo บ Chaotic Spear: %sword12%     บ Chaotic Armor: %arm12%
-echo บ Mythical Godsword: %ls1% บ Mythical Armor: %la1%
-echo บ Alydril Godsword: %ls2%  บ Alydril Armor: %la2%
-echo ศออออออออออออออออออออออสอออออออออออออออออออออออออผ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยป
+echo ยบ Health: %hp%					 ยบ
+echo ยบ Level: %curlvl%					 ยบ
+echo ยบ Gold: %money%					 ยบ
+echo ยบ EXP: %playerxp%					 ยบ
+echo ยบ EXP until next level: %xpuntil%			 ยบ
+echo ยบ Total level: %ttllvl%				 ยบ
+echo ยบ Weapon: %swordtype% %skind%		 	 ยบ
+echo ยบ Armor: %armtype% Armor			 	 ยบ
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo ยบ Items:	       ยบ
+echo ยบ Bait: %bait%	       ยบ Gemstones: %gem%
+echo ยบ Seeds: %seed%	       ยบ Magic Orbs: %morb%
+echo ยบ Furs: %fur%	       ยบ Raw Food: %rfood%
+echo ยบ Ore: %ore%	       ยบ Huge Bones: %hbone%
+echo ยบ Logs: %log%	       ยบ Dragon Hides: %dhide%
+echo ยบ Food: %food%	       ยบ Runic Tablets: %rtab%
+echo ยบ Ingots: %ingot%	       ยบ Goblin Mails: %gmail%
+echo ยบ Potions: %potion%	       ยบ Bows: %bow%
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยน
+echo ยบ Weapons:             ยบ Armor:
+echo ยบ Wooden Sword: %sword1%      ยบ Cloth Armor: %arm1%
+echo ยบ Stone Sword: %sword2%       ยบ Chain Armor: %arm2%
+echo ยบ Bronze Sword: %sword3%      ยบ Bronze Armor: %arm3%
+echo ยบ Iron Sword: %sword4%        ยบ Iron Armor: %arm4%
+echo ยบ Steel Sword: %sword5%       ยบ Steel Armor: %arm5%
+echo ยบ Gold Sword: %sword6%        ยบ Gold Armor: %arm6%
+echo ยบ Crystal Sword: %sword7%     ยบ Crystal Armor: %arm7%
+echo ยบ Sacred Blade: %sword8%      ยบ Sacred Armor: %arm8%
+echo ยบ Runic Sword: %sword9%       ยบ Runic Armor: %arm9%
+echo ยบ Infernal Rapier: %sword10%   ยบ Infernal Armor: %arm10%
+echo ยบ Omega Maul: %sword11%        ยบ Omega Armor: %arm11%
+echo ยบ Chaotic Spear: %sword12%     ยบ Chaotic Armor: %arm12%
+echo ยบ Mythical Godsword: %ls1% ยบ Mythical Armor: %la1%
+echo ยบ Alydril Godsword: %ls2%  ยบ Alydril Armor: %la2%
+echo รรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรรยผ
 echo.
 echo What would you like to do?
 echo.
