@@ -1,6 +1,6 @@
 README/Setup For BATch Assistant Karla,
 
-Distribution 1 - Version 1.4
+Distribution 1 - Version 1.5
 
 
 To use this program to full extent a USB drive labled as the d:/ drive in your computer is required, (As of version 1.3 this is no longer required)
@@ -50,4 +50,4 @@ Dis 1 - Version 1.3 - Data 104 KB
 Bug Fixes, added Pokemon Game, Added Name saving for game cross data
 
 
-Last Update 11/12/2019  -  3:01 PM							William Downing 2019
+Last Update 15/11/2019  -  11:19 PM							William Downing 2019
