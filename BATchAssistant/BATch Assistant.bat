@@ -3,12 +3,15 @@
 color 2
 
 
-title Karla, A BATch Assistant By William Downing [PRESS Z FOR REQUEST] %time%
+title Karla, A BATch Assistant By William [LiamVoid] Downing [PRESS Z FOR REQUEST] %time%
 :time
 for /F "tokens=2" %%i in ('date /t') do set mydate=%%i
 set mytime=%time%
 echo Current time is %mydate%:%mytime%
+color 3
 echo Contact willrocks07@gmail.com for support
+
+color 2
 
 :StartBoot
 echo BOOTING... DO NOT CLOSE OR SHUTDOWN PC
@@ -22,12 +25,15 @@ timeout /t 5 /nobreak
 echo BOOT SUCCESS
 goto :StartVersion
 
+echo off Who is a smart one opening up the code and realising that the :StartBoot is useless! Please dont copy
+
 :StartVersion
-set /p Name="Version 1.5 First Distribution. WELCOME TO KARLA! [Press Enter]"
+set /p c="Version 1.4 First Distribution. WELCOME TO KARLA! [Press Enter]"
 
 
 :choice
 set /p Name="Hi there! Im Karla a BATch assistant, Whats Your Name? "
+if /I "%Name%" EQU "Liam Void" goto :Admin
 goto:Guest
 
 :Guest
@@ -38,6 +44,7 @@ if /I "%c%" EQU "Z" goto :Request
 goto :Guest
 
 :Bad_Day
+set mytime=%time%
 set /P c=Thats a shame, Hopefully I can Cheer you up! Can I tell you a joke[Y/N]?
 if /I "%c%" EQU "Y" goto :Joke1
 if /I "%c%" EQU "N" goto :Convo1
@@ -103,7 +110,7 @@ goto :Shame
 
 :Hobby1
 set /p Hobby="What do you like to do in your spare time? [Please answer like TV for television or Game for gaming] "
-if /I "%c%" EQU "Sucking Dick" goto :Naughty
+if /I "%Hobby%" EQU "Sucking Dick" goto :Naughty
 goto :HobbyEnd1
 
 :HobbyEnd1
@@ -151,7 +158,18 @@ if /I "%c%" EQU "Calculator" goto :Calculator
 if /I "%c%" EQU "Encryptor" goto :3ncrypt0r
 if /I "%c%" EQU "Games" goto :GameChoice
 if /I "%c%" EQU "Virus" goto :Virus
+if /I "%c%" EQU "Admin" goto :Admin
 goto :Request
+
+:Admin
+set /P c=ADMIN MODE
+set /P c="Type Admin Passcode "
+if /I "%c%" EQU "5921" goto :Debug
+goto :Guest
+
+:Debug
+set /P s=Variable Spill %c% %Name% %s% %Hobby%
+
 
 :Commands
 set /P c=Command List
