@@ -43,13 +43,12 @@ Original Distribution of Karla
 Dis 1 - Version 1.1 - Data ???
 Fixed Bugs where Dog and Cat choice didnt work, Added command list
 
-
 Dis 1 - Version 1.2 - Data ???
 Removed Dog and Cat choice in favour of animal choice, Fixed gramatical errors, added fake virus notification
 trick, updated command list, hid files
-SSS
+
 Dis 1 - Version 1.3 - Data 104 KB
 Bug Fixes, added Pokemon Game, Added Name saving for game cross data
 
 
-Last Update 15/11/2019  -  3:01 PM							William Downing 2019
+Last Update 11/25/2019  -  2:59 PM							William Downing 2019
